@@ -26,7 +26,8 @@ public class Application extends SpringBootServletInitializer {
 
     @RequestMapping(path = "/", method = RequestMethod.GET)
     public String index() {
-        log.debug("hoge");
+        log.debug("ロガーで出力したログ");
+        System.out.println("System.out.printlnで出力したログ");
         return "ok";
     }
 }
